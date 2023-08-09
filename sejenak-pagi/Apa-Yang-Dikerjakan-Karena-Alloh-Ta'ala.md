@@ -1,3 +1,16 @@
+<style>
+  /* Gaya untuk elemen dengan atribut dir="rtl" */
+  [dir="rtl"] {
+    text-align: center; /* Rata tengah teks */
+  }
+
+  /* Gaya untuk teks dalam elemen dengan atribut dir="rtl" */
+  [dir="rtl"] p {
+    display: inline-block; /* Membuat teks menjadi elemen inline */
+    text-align: left; /* Kembalikan perataan teks kembali ke kiri */
+  }
+</style>
+
 🌷🌷🌷🌷🌷🌷🌷🌷🌷🌷
 <p dir="rtl" style="font-family: Amiri; line-height: 2.0;">
   السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ
