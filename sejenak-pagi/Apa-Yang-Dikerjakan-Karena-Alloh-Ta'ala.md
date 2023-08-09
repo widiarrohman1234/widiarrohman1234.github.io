@@ -4,7 +4,7 @@
 </p>
 
 Sejenak Pagi
-Apa Yang Dikerjakan Karena Alloh Ta'ala
+# Apa Yang Dikerjakan Karena Alloh Ta'ala
 
 Saudara dan Sahabatku...
 Apa yang diamalkan ikhlas karena Alloh Ta'ala tidak akan berujung kecewa, sekalipun manusia tidak memujinya.
