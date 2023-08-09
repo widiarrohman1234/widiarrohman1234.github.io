@@ -1,5 +1,8 @@
 🌷🌷🌷🌷🌷🌷🌷🌷🌷🌷
-السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ
+<p dir="rtl" style="font-family: Amiri; line-height: 2.0;">
+  السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ
+</p>
+
 Sejenak Pagi
 Apa Yang Dikerjakan Karena Alloh Ta'ala
 
