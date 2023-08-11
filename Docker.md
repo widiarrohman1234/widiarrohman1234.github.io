@@ -52,6 +52,10 @@
         ```
         docker container exec -i -t namacontainer /bin/bash
         ```
+    2) masuk sebagai root
+        ```
+        docker exec -u 0 -it jenkins bash
+        ```
 4.	container port forwarding
     1)	perintah
         > docker container create --name namacontainer --publish porthost:portcontainer image:tad
