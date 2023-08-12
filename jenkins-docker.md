@@ -37,49 +37,60 @@ Untuk menginstal Jenkins menggunakan Docker dan mengarahkan port 49000 pada host
 
 Pastikan port 49000 pada host tidak digunakan oleh aplikasi lain dan pastikan Anda menggantinya dengan port yang tersedia jika diperlukan. Juga, perhatikan bahwa menggunakan Docker memungkinkan Anda untuk dengan mudah mengelola dan menghapus container sesuai kebutuhan.
 
-> saya memiliki container jenkins, apakah bisa menginstall npm/node.js didalamnya. agar proses build repository dari github bisa dilakukan?
+> cara menginstall docker jenkins dengan menggunakan Dockerfile yang didalamnya sudah sekalian menginstall npm didalam container jenkins
 
-Ya, Anda bisa menginstall npm (Node Package Manager) dan Node.js di dalam Jenkins container untuk memungkinkan proses build repository dari GitHub yang memerlukan lingkungan Node.js. Berikut adalah langkah-langkah umum yang bisa Anda ikuti:
+Untuk menginstal Jenkins dengan Docker dan dalam Dockerfile sudah termasuk instalasi npm, Anda perlu membuat Dockerfile kustom yang akan membangun gambar Docker berdasarkan gambar resmi Jenkins dan menambahkan langkah-langkah instalasi npm di dalamnya. Berikut adalah contoh langkah-langkahnya:
 
-1. **Buka Jenkins Container:**
-   Pastikan container Jenkins sedang berjalan dan Anda dapat mengakses antarmukanya melalui browser.
+1. **Buat Direktori Proyek:**
 
-2. **Buka Terminal di Dalam Container:**
-   Anda perlu masuk ke dalam container Jenkins untuk dapat menjalankan perintah-perintah instalasi. Anda bisa menggunakan perintah seperti `docker exec -it <container_name> /bin/bash` (sesuaikan dengan nama container Jenkins Anda).
+   Buat direktori baru untuk proyek Anda, dan di dalamnya buat Dockerfile.
 
-3. **Install Node.js dan npm:**
-   Di dalam terminal container Jenkins, Anda dapat menjalankan perintah-perintah berikut untuk menginstall Node.js dan npm:
+2. **Buat Dockerfile:**
 
-   ```
-   curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
-   apt-get install -y nodejs
-   ```
+   Buat sebuah Dockerfile di dalam direktori proyek Anda dengan teks editor favorit. Contoh Dockerfile berikut akan membangun gambar Jenkins dan menginstal npm di dalamnya:
 
-   Pastikan perintah-perintah tersebut berhasil dijalankan dan Node.js beserta npm terinstall dengan baik.
+   ```Dockerfile
+   # Gunakan gambar Jenkins resmi sebagai dasar
+   FROM jenkins/jenkins:latest
 
-4. **Konfigurasi Build Job:**
-   Setelah Node.js dan npm terinstall di dalam container Jenkins, Anda bisa membuat atau mengonfigurasi job build Anda. Biasanya, dalam langkah konfigurasi, Anda bisa menambahkan tahap (stage) di mana Anda menjalankan perintah-perintah npm untuk menginstall dependensi dan menjalankan proses build dari repository GitHub Anda.
+   # Ganti ke pengguna root untuk menginstal paket
+   USER root
 
-5. **Tambahkan Perintah npm dalam Tahap Build:**
-   Dalam konfigurasi tahap build, tambahkan langkah-langkah yang diperlukan, seperti perintah untuk menginstall dependensi menggunakan npm dan menjalankan proses build. Contoh:
+   # Instalasi paket npm
+   RUN apt-get update && \
+       apt-get install -y npm && \
+       rm -rf /var/lib/apt/lists/*
 
-   ```
-   stage('Install Dependencies') {
-       steps {
-           sh 'npm install'
-       }
-   }
-
-   stage('Build') {
-       steps {
-           sh 'npm run build'
-       }
-   }
+   # Kembali ke pengguna Jenkins
+   USER jenkins
    ```
 
-   Pastikan untuk menyesuaikan perintah-perintah di atas dengan struktur proyek dan perintah yang sebenarnya digunakan dalam repository GitHub Anda.
+   Pastikan Anda menyimpan Dockerfile ini di direktori proyek Anda.
 
-6. **Simpan dan Jalankan Job:**
-   Simpan konfigurasi build job Anda dan jalankan job tersebut. Jenkins akan menjalankan langkah-langkah yang Anda definisikan dalam tahapan build.
+3. **Bangun Gambar Docker:**
 
-Pastikan Anda memiliki pemahaman dasar tentang cara kerja Jenkins, penggunaan Docker (jika Anda menggunakan Docker untuk menjalankan Jenkins dalam container), serta konfigurasi build jobs dalam Jenkins. Jika Anda menghadapi kendala atau masalah selama proses ini, pastikan untuk merujuk kepada dokumentasi resmi Jenkins, Docker, Node.js, dan npm.
+   Buka terminal dan arahkan ke direktori proyek Anda yang berisi Dockerfile. Jalankan perintah berikut untuk membangun gambar Docker:
+
+   ```bash
+   docker build -t jenkins-with-npm .
+   ```
+
+   Pastikan titik di akhir perintah di atas menunjukkan ke direktori tempat Dockerfile Anda berada.
+
+4. **Jalankan Container Jenkins:**
+
+   Setelah gambar Docker selesai dibangun, Anda dapat menjalankan kontainer Jenkins menggunakan perintah seperti berikut:
+
+   ```bash
+   docker run -p 8080:8080 -p 50000:50000 jenkins-with-npm
+   ```
+
+   Pastikan untuk mengganti port yang sesuai jika Anda ingin menggunakan port yang berbeda.
+
+5. **Akses Jenkins:**
+
+   Buka browser dan akses Jenkins melalui http://localhost:8080 atau sesuai dengan port yang Anda tentukan. Ikuti panduan untuk menyelesaikan instalasi dan mengatur Jenkins.
+
+Perhatikan bahwa dengan menggabungkan Jenkins dan npm dalam satu gambar Docker, Anda menambahkan perangkat lunak yang perlu dikelola dan diperbarui ke dalam gambar tersebut. Pastikan Anda mempertimbangkan strategi pemeliharaan dan pengelolaan dalam jangka panjang.
+
+Pastikan juga Anda memahami setiap langkah dan implikasinya saat menggunakan Docker. Menggunakan Docker memerlukan pemahaman tentang cara kerja Docker, gambar, dan kontainer.
