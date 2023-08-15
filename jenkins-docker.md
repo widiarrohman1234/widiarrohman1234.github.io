@@ -1,5 +1,55 @@
 # Instalasi jenkins menggunakan docker
 
+## Install docker di Ubuntu
+1. **Persiapan:**
+
+
+   ```bash
+   sudo apt update
+   ```
+
+2. **Instal Prasyarat:**
+
+   ```bash
+   sudo apt install apt-transport-https ca-certificates curl software-properties-common
+   ```
+
+3. **Tambahkan Repository Docker:**
+
+   Tambahkan repository Docker ke sistem Anda:
+
+   ```bash
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+   echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   ```
+
+4. **Instal Docker:**
+
+   Setelah menambahkan repository, lakukan instalasi Docker:
+
+   ```bash
+   sudo apt update
+   sudo apt install docker-ce
+   ```
+
+5. **Memeriksa Status Docker:**
+
+   ```bash
+   sudo systemctl status docker
+   ```
+
+6. **Menjalankan Docker Tanpa sudo (Opsional):**
+
+   Secara default, Anda mungkin perlu menjalankan perintah Docker dengan `sudo`. Namun, Anda dapat menambahkan pengguna Anda ke grup "docker" untuk menjalankan Docker tanpa `sudo`:
+
+   ```bash
+   sudo usermod -aG docker $USER
+   ```
+
+   Setelah itu, Anda perlu keluar dan masuk lagi atau memulai ulang komputer agar perubahan ini berlaku.
+
+
+## Install Jenkins di Docker
 Untuk menginstal Jenkins menggunakan Docker dan mengarahkan port 49000 pada host ke port 8080 di container, Anda dapat mengikuti langkah-langkah berikut:
 
 1. **Pastikan Docker Terinstal**:

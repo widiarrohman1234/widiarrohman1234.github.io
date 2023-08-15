@@ -44,7 +44,7 @@ macam-macam perintah `migrate`
 * `php artisan migrate:refresh`:membatalkan dan menjalankan ulang semua migrasi. Ini sama dengan menjalankan perintah migrate:reset dan kemudian migrate.
 * `php artisan migrate:status`: menampilkan status migrasi, yaitu migrasi mana yang telah dijalankan dan migrasi mana yang belum dijalankan.
 * `php artisan make:migration NamaMigrasi`: membuat file migrasi baru dengan nama tertentu di direktori `database/migrations` 
-* `php artisan migrate:refresh --path=database/migrations/2014_10_12_000000_create_users_table.php`: menjalankan 1 file migrasi saja
+* ```php artisan migrate:refresh --path=database/migrations/2014_10_12_000000_create_users_table.php``` : menjalankan 1 file migrasi saja
 
 # templating
 memanggil folder di `/public`
