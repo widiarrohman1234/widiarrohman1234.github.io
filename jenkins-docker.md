@@ -48,6 +48,32 @@
 
    Setelah itu, Anda perlu keluar dan masuk lagi atau memulai ulang komputer agar perubahan ini berlaku.
 
+## Install nodejs didalam Jenkins Docker
+1. **Masuk ke Container Jenkins:**
+   ```bash
+   docker exec -u 0 -it nama-container-jenkins /bin/bash
+   ```
+2. **Install Node.js dan npm:**
+   ```bash
+   apt-get update
+   apt-get install -y curl
+   curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+   apt-get install -y nodejs
+   ```
+3. **Verifikasi Instalasi:**
+   ```bash
+   node -v
+   npm -v
+   ```
+4. **Hapus Repository Node.js: (Optional)**
+
+   Anda dapat menggunakan perintah berikut untuk menghapus pengaturan repository Node.js yang telah ditambahkan sebelumnya:
+
+   ```bash
+   sudo rm /etc/apt/sources.list.d/nodesource.list
+   sudo rm /etc/apt/sources.list.d/nodesource.list.save
+   sudo apt update
+   ```
 
 ## Install Jenkins di Docker
 Untuk menginstal Jenkins menggunakan Docker dan mengarahkan port 49000 pada host ke port 8080 di container, Anda dapat mengikuti langkah-langkah berikut:
