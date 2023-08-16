@@ -169,4 +169,55 @@ Untuk menginstal Jenkins dengan Docker dan dalam Dockerfile sudah termasuk insta
 
 Perhatikan bahwa dengan menggabungkan Jenkins dan npm dalam satu gambar Docker, Anda menambahkan perangkat lunak yang perlu dikelola dan diperbarui ke dalam gambar tersebut. Pastikan Anda mempertimbangkan strategi pemeliharaan dan pengelolaan dalam jangka panjang.
 
-Pastikan juga Anda memahami setiap langkah dan implikasinya saat menggunakan Docker. Menggunakan Docker memerlukan pemahaman tentang cara kerja Docker, gambar, dan kontainer.
+## Docker auto start after restart server
+Untuk menjalankan perintah secara otomatis setiap kali server direstart, Anda dapat menggunakan mekanisme yang disebut sebagai "systemd service" pada sistem Linux. Ini memungkinkan Anda untuk membuat dan mengelola layanan kustom yang akan dijalankan secara otomatis saat sistem dimulai.
+
+1. **Buat File Unit Service:**
+
+   Buat file unit service dengan ekstensi `.service` dalam direktori `/etc/systemd/system/`. Misalnya, Anda dapat membuat file bernama `docker-services.service`:
+
+   ```bash
+   sudo nano /etc/systemd/system/docker-services.service
+   ```
+
+2. **Isi Konten Unit Service:**
+
+   ```plaintext
+   [Unit]
+   Description=Docker Services Auto Start
+
+   [Service]
+   Type=oneshot
+   RemainAfterExit=yes
+   ExecStart=/usr/bin/docker container start jenkins
+   ExecStart=/usr/bin/docker container start postgres-1
+
+   [Install]
+   WantedBy=default.target
+   ```
+
+   Pastikan bahwa path untuk `docker` sesuai dengan path yang digunakan di sistem Anda. Juga, perhatikan bahwa dalam contoh ini, perintah `docker container start` dijalankan secara berurutan.
+
+3. **Reload dan Start Service:**
+
+   Setelah Anda menyimpan file unit service, reload daemon systemd dan jalankan service:
+
+   ```bash
+   sudo systemctl daemon-reload
+   sudo systemctl enable docker-services
+   sudo systemctl start docker-services
+   ```
+
+   Ini akan mengaktifkan service dan menjalankannya saat sistem dimulai.
+
+4. **Periksa Status Service:**
+
+   Anda dapat memeriksa status service dengan perintah:
+
+   ```bash
+   sudo systemctl status docker-services
+   ```
+
+   Pastikan service berjalan tanpa masalah.
+
+Sekarang, setiap kali server direstart, systemd akan menjalankan perintah Docker yang Anda tentukan dalam file unit service.
