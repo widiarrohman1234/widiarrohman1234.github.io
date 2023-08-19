@@ -103,3 +103,13 @@ function App() {
 export default App;
 
 ```
+
+## Core concepts
+3 hal yang wajib dikuasai pada pembelajaran React.js
+1. components
+- dibuat menggunanakan function
+- nama function diawali huruf besar
+- mereturn element UI
+2. props
+3. state
+

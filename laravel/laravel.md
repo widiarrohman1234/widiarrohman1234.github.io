@@ -23,14 +23,14 @@ contoh 2
 php artisan make:migration create_product_table --create=product
 ```
 
-* $table->id();
-* $table->string('name');
-* $table->integer('age');
-* $table->boolean('is_active');
-* $table->text('description')->nullable();
-* $table->date('birth_date');
-* $table->dateTime('created_at');
-* $table->timestamps();
+* `ID` = $table->id();
+* `String` = $table->string('name');
+* `Int` = $table->integer('age');
+* `Boolean` = $table->boolean('is_active');
+* `Text` & nullable = $table->text('description')->nullable();
+* `Date` = $table->date('birth_date');
+* `Datetime` = $table->dateTime('created_at');
+* `Timestamp` = $table->timestamps();
 * $table->foreign('id_vendor')->references('id')->on('vendor')->onDelete('cascade');
 * $table->unsignedBigInteger('id_product'); //hanya bilangan integer positif dari 0 hingga 18,446,744,073,709,551,615.
 * $table->primary(['id_product', 'id_vendor']); //2 kolom menjadi primary
@@ -45,6 +45,7 @@ macam-macam perintah `migrate`
 * `php artisan migrate:status`: menampilkan status migrasi, yaitu migrasi mana yang telah dijalankan dan migrasi mana yang belum dijalankan.
 * `php artisan make:migration NamaMigrasi`: membuat file migrasi baru dengan nama tertentu di direktori `database/migrations` 
 * ```php artisan migrate:refresh --path=database/migrations/2014_10_12_000000_create_users_table.php``` : menjalankan 1 file migrasi saja
+* ```php artisan migrate --path=database/migrations/2023_08_19_084706_create_denom_table.php``` : Hanya menjalankan 1 migrasi baru/diinginkan tanpa menganggu yang lainnya.
 
 # templating
 memanggil folder di `/public`
