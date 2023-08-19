@@ -5,6 +5,7 @@ Berikut adalah langkah-langkah untuk menginstal MongoDB menggunakan Docker pada 
 2. Buka terminal SSH dan akses instance EC2 Ubuntu Anda.
 
 3. Jalankan perintah berikut untuk mengunduh dan menjalankan container MongoDB:
+
    ```bash
    sudo docker run --name mongodb -d -p 27017:27017 mongo
    ```

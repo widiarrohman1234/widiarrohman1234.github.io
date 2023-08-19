@@ -39,4 +39,11 @@ Berikut adalah langkah-langkah untuk menginstal Docker pada Ubuntu:
 
    Jika statusnya "active" (berarti Docker berjalan), maka instalasi telah berhasil.
 
+9. (Opsional) Jika Anda ingin menjalankan Docker sebagai pengguna non-root, tambahkan pengguna ke grup "docker":
+   ```bash
+   sudo usermod -aG docker $USER
+   ```
+
+Setelah menambahkan pengguna ke grup "docker", Anda perlu keluar dari sesi saat ini dan masuk kembali untuk perubahan tersebut diterapkan.
+
 Selamat! Anda telah berhasil menginstal Docker pada Ubuntu. Anda sekarang dapat menggunakan perintah-perintah Docker untuk mengelola kontainer dan menjalankan aplikasi dalam lingkungan terisolasi.

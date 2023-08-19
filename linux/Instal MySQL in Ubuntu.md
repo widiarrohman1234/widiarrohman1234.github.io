@@ -3,6 +3,7 @@ Untuk menginstal MySQL pada instance EC2 yang menjalankan Ubuntu di AWS, Anda da
 1. SSH ke instance EC2 Anda menggunakan klien SSH seperti Terminal atau PuTTY.
 
 2. Pastikan sistem Ubuntu diupdate dengan menjalankan perintah berikut:
+
    ```
    sudo apt update
    sudo apt upgrade
