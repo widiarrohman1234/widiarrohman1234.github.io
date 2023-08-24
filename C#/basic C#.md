@@ -141,7 +141,7 @@ x += 5;
 - &=
 - |=
 - ^=
-- >>=
+- `>>=`
 - <<=
 
 ## Comparison Operators
@@ -152,9 +152,9 @@ Console.WriteLine(x > y);
 ```
 - ==
 - !=
-- >
+- `>`
 - <
-- >= 
+- `>=` 
 - <=
 
 ## Logical Operators
@@ -345,7 +345,7 @@ for (int i = 0; i < numbers.GetLength(0); i++){
 }
 ```
 
-
+## Comming soon....
 
 
 
