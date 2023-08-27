@@ -220,7 +220,7 @@ ls -l
 
 
 
-![file-permision](image/file-permission.png)
+![file-permision](../../image/file-permission.png)
 berbagai karakter jenis file beserta artinya yang ada di Linux.
 1. File type
 
@@ -234,7 +234,7 @@ berbagai karakter jenis file beserta artinya yang ada di Linux.
 | p        | Pipe (komunikasi antarproses dalam sistem operasi)                                                      |
 | s        | Socket (komunikasi antarproses dalam sistem operasi)                                                    |
 
-![file-permision](image/file-permission.png)
+![file-permision](../../image/file-permission.png)
 
 2. File permission
     - Nomor 2 merupakan file permission
@@ -243,13 +243,13 @@ berbagai karakter jenis file beserta artinya yang ada di Linux.
         * b) `r--` untuk group pemilik file, hanya read
         * c) `r--` untuk user di luar owner dan group pemilik file, hanya read
 
-![file-permision](image/file-permission.png)
+![file-permision](../../image/file-permission.png)
 
 3. Link count
 
     Nomor 3 mengacu pada link count (jumlah link atau hard link) yang dimiliki. Dalam kasus ini hanya `1`.
  
-![file-permision](image/file-permission.png)
+![file-permision](../../image/file-permission.png)
     
 4. User/Owner
     
