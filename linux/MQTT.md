@@ -1,4 +1,4 @@
-# MQTT
+# Command Publish and Subscribe MQTT
 
 ## contoh subscribe dan publish pada CMD windows
 - buat cmd dan masuk ke direktori `"C:\Program Files\mosquitto"`
