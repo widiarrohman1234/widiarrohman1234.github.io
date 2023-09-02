@@ -95,7 +95,7 @@ sudo apt install mosquitto-clients
 
 ### Penerima
 ```
-mosquitto_sub -v -t 'test/topic' -u mqtt_user1 -P ******
+mosquitto_sub -v -t test/topic -u mqtt_user1 -P ******
 ```
 
 ### Pengirim
