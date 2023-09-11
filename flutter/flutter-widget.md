@@ -185,6 +185,21 @@ class AppBarDemo extends StatelessWidget {
 
 ## Buttons
 - [Menu](#menu)
+### Elevated Button
+```
+ElevatedButton(
+  onPressed: () => {},
+  style: ElevatedButton.styleFrom(
+      backgroundColor: Colors.yellow),
+  child: const Text(
+    "Masuk",
+    style: TextStyle(
+      fontWeight: FontWeight.bold,
+      fontSize: 18,
+    ),
+  ),
+),
+```
 
 ## Cards
 - [Menu](#menu)
@@ -236,6 +251,19 @@ class AppBarDemo extends StatelessWidget {
 
 ## Text fields
 - [Menu](#menu)
+```
+final TextEditingController _usernameController = TextEditingController();
+
+TextField(
+  obscureText: true,
+  controller: passwordController,
+  decoration: const InputDecoration(
+    hintText: "Password",
+    border: OutlineInputBorder(),
+    icon: Icon(Icons.lock),
+  ),
+),
+```
 
 ## Tooltips
 - [Menu](#menu)
@@ -257,4 +285,40 @@ class AppBarDemo extends StatelessWidget {
         (context, value, child) => value + 1
         ```
 
+## Image
+- `pubspec.yaml`
+```
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/img/logo_sidafa_android.png
+```
 
+- view
+```
+Image(
+  image: AssetImage('assets/img/logo_sidafa_android.png'),
+  height: 200,
+  width: 200,
+)
+```
+
+## Timer
+```
+ Timer(const Duration(seconds: 2), () {
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => const LoginPage()));
+    });
+```
+## ink well
+```
+InkWell(
+  child: const Text(
+    "Lupa password?",
+    style: TextStyle(color: Colors.white),
+  ),
+  onTap: () {
+    print("inkwell lupa password");
+  },
+)
+```
