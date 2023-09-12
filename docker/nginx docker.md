@@ -39,3 +39,9 @@ ls -l /usr/share/nginx
 ```
 docker restart nginx-1
 ```
+
+## Optional
+cek status nginx
+```
+nginx -t
+```
