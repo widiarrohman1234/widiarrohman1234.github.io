@@ -4,6 +4,9 @@
 - https://sakanusantara.com/tentang-kami/
 - https://new.gigapulsa.com/?gclid=Cj0KCQjw9fqnBhDSARIsAHlcQYTb7ib3eoS6V_l3isGPD3_wvwbdxtu3fRYuRDV-UuYlU06dXdjutpAaAhPLEALw_wcB
 - https://www.otomax-software.com/id/download/
+- https://kalkun.sourceforge.io/
+- https://wammu.eu/gammu/
+
 
 Contohnya termasuk aplikasi seperti 
 - Gammu (untuk mengelola perangkat telepon seluler),
