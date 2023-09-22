@@ -107,6 +107,32 @@ docker compose start
 
 ## berhasil
 
+# Redirect http to https menggunakan nginx
+ubah pengaturan di `default.conf`
+```
+server {
+    listen 80;
+    server_name widiarrohman.my.id;
+
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+server {
+    listen 443 ssl;
+    server_name widiarrohman.my.id;
+
+    ssl_certificate /etc/nginx/ssl/fullchain.pem;
+    ssl_certificate_key /etc/nginx/ssl/privkey.pem;
+
+    location / {
+        root /usr/share/nginx/html;
+        index index.html;
+    }
+}
+```
+
 
 
 

@@ -204,3 +204,16 @@ Dalam masalah regresi, tidak ada fungsi aktivasi khusus pada lapisan keluaran ka
 ## Node 2
 ## Node 3
 
+## Random
+- activacion function
+- sigmoin
+- hyperbolic tangent
+- rectified liniead units
+- leaky relu
+- swish
+
+- Long short-term memory (LSTM)
+- natural language processing (NLP)
+- Recurrent neural network (RNN)
+
+
