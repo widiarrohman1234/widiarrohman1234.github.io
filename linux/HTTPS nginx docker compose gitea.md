@@ -38,6 +38,32 @@ root@VPS-1-Testing-WA:/etc/letsencrypt/live/gitea.widiarrohman.my.id# ls
 README  cert.pem  chain.pem  fullchain.pem  privkey.pem
 ```
 
+## docker-compose.yml untuk gitea
+```shell
+root@VPS-1-Testing-WA:/home/widiarrohman1234/docker/gitea# cat docker-compose.yml
+version: "2"
+
+services:
+  server:
+    image: gitea/gitea:1.20.4-rootless
+    environment:
+      - GITEA__database__DB_TYPE=mysql
+      - GITEA__database__HOST=103.175.219.171:3306
+      - GITEA__database__NAME=gitea
+      - GITEA__database__USER=********
+      - GITEA__database__PASSWD=*********
+    restart: always
+    volumes:
+      - ./data:/var/lib/gitea
+      - ./config:/etc/gitea
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "3000:3000"
+      - "2222:2222"
+root@VPS-1-Testing-WA:/home/widiarrohman1234/docker/gitea#
+```
+
 ## Atur subdomain di `conf.d`
 ```shell
 root@VPS-1-Testing-WA:/home/widiarrohman1234/docker/nginx-1/conf.d# cat gitea.conf
@@ -102,3 +128,53 @@ root@VPS-1-Testing-WA:/home/widiarrohman1234/docker/nginx-1# docker container re
 
 
 ## Selesai
+
+---
+
+# buat kunci SSH untuk gitea
+```shell
+root@VPS-1-Testing-WA:/home/widiarrohman1234# mkdir ssh
+root@VPS-1-Testing-WA:/home/widiarrohman1234# cd ssh
+root@VPS-1-Testing-WA:/home/widiarrohman1234/ssh# ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): /home/widiarrohman1234/ssh/gitea
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/widiarrohman1234/ssh/gitea
+Your public key has been saved in /home/widiarrohman1234/ssh/gitea.pub
+The key fingerprint is:
+SHA256:D3pWt+MHJapXbHCXiUQLCUS1LSlQp8DWgb81lkyG7jc root@VPS-1-Testing-WA
+The key's randomart image is:
++---[RSA 3072]----+
+|     .o**=+o.    |
+|      +ooo+=..   |
+|     . oo++oo. o |
+|        o.B.+ =  |
+|       .S+.*.+   |
+|       .o+E.=.   |
+|      . oo.+o.   |
+|       o. .. ..  |
+|         .  ..   |
++----[SHA256]-----+
+root@VPS-1-Testing-WA:/home/widiarrohman1234/ssh# ls
+gitea  gitea.pub
+root@VPS-1-Testing-WA:/home/widiarrohman1234/ssh#
+```
+
+## tambahkan SSH ke sistem linux
+```shell
+root@VPS-1-Testing-WA:/home/widiarrohman1234/ssh# eval $(ssh-agent)
+Agent pid 3136967
+root@VPS-1-Testing-WA:/home/widiarrohman1234/ssh# ssh-add /home/widiarrohman1234/ssh/gitea
+Identity added: /home/widiarrohman1234/ssh/gitea (root@VPS-1-Testing-WA)
+root@VPS-1-Testing-WA:/home/widiarrohman1234/ssh# ssh-add -l
+3072 SHA256:D3pWt+MHJapXbHCXiUQLCUS1LSlQp8DWgb81lkyG7jc root@VPS-1-Testing-WA (RSA)
+```
+
+## Daftarkan ke gitea
+![Alt text](../image/giteassh.png)
+
+## lakukan verifikasi
+`belum di dokumentasikan`
+
+
