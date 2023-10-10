@@ -63,6 +63,10 @@ services:
       - "2222:2222"
 root@VPS-1-Testing-WA:/home/widiarrohman1234/docker/gitea#
 ```
+setting chown
+```
+root@VPS-1-Testing-WA:/home/widiarrohman1234/docker/gitea# sudo chown 1000:1000 config/ data/
+```
 
 ## Atur subdomain di `conf.d`
 ```shell
