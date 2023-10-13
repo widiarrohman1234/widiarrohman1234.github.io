@@ -48,7 +48,11 @@ root@vps-sidafa:/var/www# eval "$(ssh-agent -s)"
 Enter passphrase for /home/sidafa/ssh/sidafa-web: ******
 Identity added: /home/sidafa/ssh/sidafa-web (root@vps-sidafa)
 
-root@vps-sidafa:/var/www# ssh-add /home/sidafa/ssh/sidafa-web
+root@vps-sidafa:/var/www# chmod 700 /home/sidafa/ssh
+root@vps-sidafa:/var/www# ssh-add /home/sidafa/ssh
+root@vps-sidafa:/var/www# ssh -T git@github.com
+Hi widiarrohman1234! You've successfully authenticated, but GitHub does not provide shell access.
+
 root@vps-sidafa:/var/www# git clone git@github.com:widiarrohman1234/sidafa-web.git
 ```
 
