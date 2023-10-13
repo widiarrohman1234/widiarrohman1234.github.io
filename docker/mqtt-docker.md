@@ -99,8 +99,9 @@ mosquitto_sub -v -t test/topic -u mqtt_user1 -P ******
 ```
 
 ### Pengirim
+Windows
 ```
-mosquitto_pub -L mqtt://mqtt_user1:****@103.175.219.171/test/topic -m "{humidity: 102.0}"
+C:\Program Files\mosquitto>mosquitto_pub -L mqtt://mqtt_user1:****@103.175.219.171/test/topic -m "{humidity: 102.0}"
 ```
 
 
