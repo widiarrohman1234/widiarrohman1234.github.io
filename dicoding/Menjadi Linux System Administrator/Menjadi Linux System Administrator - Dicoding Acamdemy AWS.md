@@ -1833,7 +1833,7 @@ sudo systemctl status fail2ban.service
 lokasi konfigurasi fail2ban
 
 ```
-/etc/fail2ban/jail.local
+nano /etc/fail2ban/jail.local
 ```
 
 isi sebagai berikut
