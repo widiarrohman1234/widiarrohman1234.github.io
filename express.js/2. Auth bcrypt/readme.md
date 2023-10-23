@@ -1,7 +1,7 @@
 # Auth express.js
 Autentikasi express.js menggunakan bcrypt dengan data lokal tanpa database.\
-username: `user` \
-password: `password`
+username: `tj` \
+password: `foobar`
 
 # Cara penggunaan
 1. Download file `2. Auth bcrypt`.
