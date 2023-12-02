@@ -29,7 +29,7 @@ Berikut adalah langkah-langkah untuk menginstal Docker pada Ubuntu:
 
 7. Terakhir, instal Docker dengan menjalankan perintah berikut:
    ```
-   sudo apt install docker-ce docker-ce-cli containerd.io
+   sudo apt install docker-ce docker-ce-cli containerd.io docker-compose
    ```
 
 8. Setelah instalasi selesai, Docker akan dijalankan secara otomatis. Anda dapat memeriksa status Docker dengan menjalankan perintah berikut:
