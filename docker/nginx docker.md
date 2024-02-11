@@ -132,3 +132,30 @@ ufw allow 443
 
 ## selesai
 ![Alt text](image-3.png)
+
+# redirect domain to ip:port
+```
+users@sidafa909:/home/sidafa909/docker/nginx/conf.d# cat default.conf
+server {
+    listen 80;
+    server_name 103.175.217.87;
+
+    root /usr/share/nginx/html;
+    index index.php index.html index.htm;
+
+}
+
+server {
+    listen 80;
+    server_name sub.domain.com;
+
+    location / {
+        proxy_pass http://103.175.217.87:8001/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
+```
