@@ -43,9 +43,11 @@ version: '3'
 services:
   mysql:
     image: mysql
-    container_name: mysql
+    container_name: mysql_dev
+    restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: ********
+      MYSQL_USER: ********
+      MYSQL_PASSWORD: ********
     ports:
       - "3306:3306"
 ```
@@ -58,4 +60,17 @@ root@vps-sidafa:/home/sidafa/docker/mysql# docker-compose up -d
 ufw allow 3306
 ```
 
-## selesai
+## Masuk ke container
+```
+docker exec -it mysql_dev bash
+```
+## Masuk ke Database
+```
+docker exec -it mysql_dev bash -c "mysql -u root -p"
+```
+## Lihat log
+```
+docker logs mysql_dev
+```
+## Selesai
+Link dokumentasi `https://hub.docker.com/_/mysql/`
