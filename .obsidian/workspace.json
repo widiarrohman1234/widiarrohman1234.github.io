@@ -1,0 +1,177 @@
+{
+  "main": {
+    "id": "05ea03c47513845d",
+    "type": "split",
+    "children": [
+      {
+        "id": "8f4ddef938774261",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4137e520cbd6495",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "linux/ssh_linux.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "3ae8842f148818cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docker/nginx docker.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9c600290628e17aa",
+    "type": "split",
+    "children": [
+      {
+        "id": "b088caa47bd2d16c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c99cf714a7228584",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "863f6042f540b854",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d02dd06a635370f9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "35290770768ab9c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0b8d5b080afe60a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a4a0ef232ebb69d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docker/nginx docker.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4d9be03c2a5749d3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docker/nginx docker.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5f3692855ad25ce0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1832a77a609dc211",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docker/nginx docker.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c99cf714a7228584",
+  "lastOpenFiles": [
+    "laravel/laravel_nohup.md",
+    "linux/ssh_linux.md",
+    "Database/MySQL/MySQL Docker.md",
+    "laravel/laravel.md",
+    "learning english language/english languange.md",
+    "mermaid-diagram.md",
+    "Protocol-Audio-Video.md",
+    "SampleMarkdown.md",
+    "random.md",
+    "learning english language/riueli-daeli/modul1.md",
+    "Readme.md",
+    "kwh-meter.md"
+  ]
+}
