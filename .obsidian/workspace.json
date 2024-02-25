@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learning english language/Belajar-Bahasa-Inggris-Lengkap-dan-Mudah-Untuk-Pemula/2. Action Verb.md",
+                "file": "javascript/10.1_function_callback.md.md",
                 "mode": "source",
                 "source": true
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#mengubah",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "learning english language/Belajar-Bahasa-Inggris-Lengkap-dan-Mudah-Untuk-Pemula/2. Action Verb.md",
+                "file": "javascript/10.1_function_callback.md.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "learning english language/Belajar-Bahasa-Inggris-Lengkap-dan-Mudah-Untuk-Pemula/2. Action Verb.md",
+                "file": "javascript/10.1_function_callback.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -115,7 +115,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learning english language/Belajar-Bahasa-Inggris-Lengkap-dan-Mudah-Untuk-Pemula/2. Action Verb.md"
+                "file": "javascript/10.1_function_callback.md.md"
               }
             }
           }
@@ -148,14 +148,28 @@
   },
   "active": "f4137e520cbd6495",
   "lastOpenFiles": [
-    "docker/nginx docker.md",
+    "'.md",
+    "dart/dart-Async.md",
+    "javascript/10_function.md.md",
+    "node.js/node.md",
+    "Untitled.canvas",
+    "KULIAH/computer_vision/1.Perkenalan.md",
+    "2024-02-24.md",
+    "javascript/10.1_function_callback.md.md",
+    "KULIAH/computer_vision",
+    "Untitled 1",
+    "Untitled",
+    "javascript/10.2_function_promise.md.md",
     "learning english language/Belajar-Bahasa-Inggris-Lengkap-dan-Mudah-Untuk-Pemula/2. Action Verb.md",
+    "Untitled.md",
+    "javascript",
+    "learning english language/english languange.md",
+    "docker/nginx docker.md",
     "learning english language/Belajar-Bahasa-Inggris-Lengkap-dan-Mudah-Untuk-Pemula",
     "linux/ssh_linux.md",
     "laravel/laravel_nohup.md",
     "Database/MySQL/MySQL Docker.md",
     "laravel/laravel.md",
-    "learning english language/english languange.md",
     "mermaid-diagram.md",
     "Protocol-Audio-Video.md",
     "SampleMarkdown.md",
