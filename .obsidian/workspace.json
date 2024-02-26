@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "javascript/10.1_function_callback.md.md",
-                "mode": "source",
+                "file": "Database/MySQL/FULL TEXT INDEX in SQL.md.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "javascript/10.1_function_callback.md.md",
+                "file": "Database/MySQL/FULL TEXT INDEX in SQL.md.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "javascript/10.1_function_callback.md.md",
+                "file": "Database/MySQL/FULL TEXT INDEX in SQL.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "javascript/10.1_function_callback.md.md"
+                "file": "Database/MySQL/FULL TEXT INDEX in SQL.md.md"
               }
             }
           }
@@ -148,6 +148,11 @@
   },
   "active": "f4137e520cbd6495",
   "lastOpenFiles": [
+    "KULIAH/aljabar_linier/1.1_Matriks_dan_Operasi_Aljabar_Matriks.md.md",
+    "Database/MySQL/FULL TEXT INDEX in SQL.md.md",
+    "KULIAH/aljabar_linier/1_pengenalan.md.md",
+    "javascript/10.1_function_callback.md.md",
+    "KULIAH/aljabar_linier",
     "'.md",
     "dart/dart-Async.md",
     "javascript/10_function.md.md",
@@ -155,7 +160,6 @@
     "Untitled.canvas",
     "KULIAH/computer_vision/1.Perkenalan.md",
     "2024-02-24.md",
-    "javascript/10.1_function_callback.md.md",
     "KULIAH/computer_vision",
     "Untitled 1",
     "Untitled",
