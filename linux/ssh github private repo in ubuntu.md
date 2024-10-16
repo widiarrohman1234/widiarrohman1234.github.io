@@ -55,5 +55,16 @@ Hi widiarrohman1234! You've successfully authenticated, but GitHub does not prov
 
 root@vps-sidafa:/var/www# git clone git@github.com:widiarrohman1234/sidafa-web.git
 ```
+## Auto terdaftar ke Agent pid
+```
+nano .bashrc
+# Start the ssh-agent
+eval "$(ssh-agent -s)"
+# Add the SSH key
+ssh-add .ssh/id_rsa
+ssh -T git@github.com
+
+source .bashrc
+```
 
 ## selesai
