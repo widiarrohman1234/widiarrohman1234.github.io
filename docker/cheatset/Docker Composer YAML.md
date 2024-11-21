@@ -1,3 +1,5 @@
+Dokumentasi resmi: https://docs.docker.com/reference/compose-file/
+
 Berikut adalah dokumentasi inti atau cheatsheet untuk `docker-compose.yml`, mencakup semua komponen yang paling umum digunakan dalam file Docker Compose. Cheatsheet ini akan membantu Anda dalam memahami dan menulis file `docker-compose.yml` dengan berbagai opsi konfigurasi.
 
 ```yaml
