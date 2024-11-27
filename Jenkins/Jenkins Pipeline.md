@@ -394,7 +394,7 @@ Jenis **agent** yang dipilih tergantung pada kebutuhan spesifik pipeline:
 Pilih **agent** yang sesuai untuk memastikan pipeline Anda berjalan optimal! 🚀
 
 # Macam-macam `steps`
-**Steps** dalam Jenkinsfile adalah blok atau perintah yang dijalankan di setiap **stage**. Mereka mewakili tindakan yang akan dilakukan oleh pipeline, seperti menjalankan skrip, mengarsipkan file, atau memicu build lain.
+**Steps** dalam Jenkinsfile adalah blok atau perintah yang dijalankan di setiap **stage**. Mereka mewakili tindakan yang akan dilakukan oleh pipeline, seperti menjalankan skrip, mengarsipkan file, atau memicu build lain. Dokumentasi lengkap, silahkan kunjungi halaman ini [LINK](https://www.jenkins.io/doc/pipeline/steps/)
 
 Berikut adalah berbagai jenis **steps** yang sering digunakan dalam Jenkinsfile:
 
