@@ -68,7 +68,7 @@ openssl req -x509 -newkey rsa:2048 -keyout certs/server.key -out certs/server.cr
 Di terminal, jalankan:
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
 ---
