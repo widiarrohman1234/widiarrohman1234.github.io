@@ -1,3 +1,4 @@
+![Bagaimana SMTP Bekerja](./image/SMTP_work.png)
 # SMTP (Simple Mail Transfer Protocol)
 SMTP (Simple Mail Transfer Protocol) adalah protokol yang digunakan untuk mengirimkan email melalui internet. Protokol ini memungkinkan pengiriman pesan dari klien email (pengirim) ke server email penerima. Berikut adalah langkah-langkah cara kerja SMTP:
 
