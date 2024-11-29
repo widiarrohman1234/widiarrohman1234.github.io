@@ -1,5 +1,7 @@
 DNS (Domain Name System) adalah sistem yang bertindak sebagai "buku alamat" internet. Ia menghubungkan nama domain (seperti **google.com**) dengan alamat IP (seperti **142.250.190.46**) sehingga perangkat dapat saling berkomunikasi. Berikut penjelasan langkah-langkahnya:
 
+![Bagaimana DNS bekerja](./image/DNS_work.jpeg)
+
 ### 1. **Pengguna Memasukkan Nama Domain**
 
 - Ketika Anda mengetik nama domain di browser (misalnya, **google.com**), komputer tidak memahami nama tersebut. Ia hanya memahami alamat IP.
