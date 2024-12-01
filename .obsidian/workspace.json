@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTTP/Test HTTP 1.1, 2.0, 3.0.md",
+                "file": "Jenkins/3 Jenkins Shared Library.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Test HTTP 1.1, 2.0, 3.0"
+              "title": "3 Jenkins Shared Library"
             }
           }
         ],
@@ -182,10 +182,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTTP/Test HTTP 1.1, 2.0, 3.0.md"
+                "file": "Jenkins/3 Jenkins Shared Library.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Test HTTP 1.1, 2.0, 3.0"
+              "title": "Outline of 3 Jenkins Shared Library"
             }
           }
         ],
@@ -193,7 +193,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,17 +208,22 @@
   },
   "active": "fa0f8298312cd196",
   "lastOpenFiles": [
+    "Jenkins/2 Jenkins Pipeline.md",
+    "Jenkins/3 Jenkins Shared Library.md",
+    "Jenkins/1 Jenkins Documentation.md",
+    "SMTP/image/SMTP_work.png",
+    "SMTP/image",
+    "DNS/image/DNS_work.jpeg",
+    "DNS/image",
+    "HTTP/Test HTTP 1.1, 2.0, 3.0.md",
     "DNS/Domain Name System (DNS).md",
-    "Jenkins/Jenkins Pipeline.md",
     "_config.yml",
-    "Jenkins/Jenkins Documentation.md",
     "docker/portainer docker-compose.md",
     "linux/instalasi https gitea/Konfigurasi https gitea dengan openSSL menggunakan d128b4b5e405455c9e81291290b785c4.md",
     "dicoding/Menjadi Linux System Administrator/Belajar Implementasi CICD.md",
     "docker/jenkins-docker.md",
     "Jenkins",
     "docker/nginx docker.md",
-    "HTTP/Test HTTP 1.1, 2.0, 3.0.md",
     "HTTP/img/result_HTTP.png",
     "HTTP/img/result_HTTPS.png",
     "SampleMarkdown.md",
@@ -245,8 +251,6 @@
     "linux/Upload local to VPS with SCP.md",
     "Database/MySQL/Restore Database.md",
     "network_pentest",
-    "KULIAH/aljabar_linier",
-    "Untitled.canvas",
-    "KULIAH/computer_vision"
+    "Untitled.canvas"
   ]
 }
