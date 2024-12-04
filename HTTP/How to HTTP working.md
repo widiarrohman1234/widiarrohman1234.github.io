@@ -111,5 +111,5 @@ Untuk mencerminkan ini secara visual, berikut adalah gambaran yang bisa dibuat:
 HTTP telah berkembang untuk mengatasi masalah latensi, efisiensi, dan keamanan. **HTTP/1.1** menjadi standar utama, **HTTP/2.0** memperkenalkan efisiensi tinggi, dan **HTTP/3.0** membawa perubahan fundamental dengan mengganti TCP ke QUIC untuk performa lebih baik.
 
 # Gambar
-![[Pasted image 20241125150941.png]]
+![Comparasion HTTP of version](./img/Comparison-of-HTTP-versions.jpg)
 Source Image: https://www.researchgate.net/publication/312560536_The_curious_case_of_parallel_connections_in_HTTP2
