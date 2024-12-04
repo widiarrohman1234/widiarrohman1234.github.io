@@ -9,4 +9,4 @@ Klik pada tautan berikut untuk mengetahui lebih lanjut tentang Task 2 tentang me
 Untuk mengetahui lebih lanjut tentang Tugas 3 tentang HTTP, DNS, dan SMTP, klik tautan berikut. [Link tugas 3](https://github.com/widiarrohman1234/widiarrohman1234.github.io/blob/master/Komunikasi_Jaringan_Komputer/Tugas_3/readme.md)
 
 ## UAS
-Untuk informasi lebih lanjut tentang UAS, silakan klik link berikut.
+Untuk informasi lebih lanjut tentang UAS, silakan klik link berikut. [Link UAS](https://github.com/widiarrohman1234/widiarrohman1234.github.io/blob/master/Komunikasi_Jaringan_Komputer/UAS/readme.md)
