@@ -1,1 +1,9 @@
-theme: jekyll-theme-minimal
+# Site settings
+title: Catatan Belajar
+author:
+  name: Widi Arrohman
+  email: widiarrohman1234@gmail.com
+description: "Catatan belajar Widi Arrohman"
+
+# Build settings
+remote_theme: jekyll/minima
