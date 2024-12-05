@@ -1,66 +1,66 @@
 {
   "main": {
-    "id": "05ea03c47513845d",
+    "id": "8d2477fa1ad62b13",
     "type": "split",
     "children": [
       {
-        "id": "8f4ddef938774261",
+        "id": "eb05becf708c65a3",
         "type": "tabs",
         "children": [
           {
-            "id": "39efb70dfc7e11bb",
+            "id": "1e1af48f54c70e5d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DNS/Domain Name System (DNS).md",
+                "file": "Komunikasi_Jaringan_Komputer/Tugas_3/readme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Domain Name System (DNS)"
+              "title": "readme"
             }
           },
           {
-            "id": "0e961652b8d940f2",
+            "id": "57a027a154964f9b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jenkins/Jenkins Documentation.md",
+                "file": "Komunikasi_Jaringan_Komputer/Tugas_1/readme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Jenkins Documentation"
+              "title": "readme"
             }
           },
           {
-            "id": "fa015f9084b8af32",
+            "id": "95d147bc115ea271",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dicoding/Menjadi Linux System Administrator/Belajar Implementasi CICD.md",
+                "file": "Komunikasi_Jaringan_Komputer/Tugas_2/readme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Belajar Implementasi CICD"
+              "title": "readme"
             }
           },
           {
-            "id": "fa0f8298312cd196",
+            "id": "46442c8f7fd7a531",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jenkins/3 Jenkins Shared Library.md",
+                "file": "Komunikasi_Jaringan_Komputer/Tugas_2/readme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 Jenkins Shared Library"
+              "title": "readme"
             }
           }
         ],
@@ -70,15 +70,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "9c600290628e17aa",
+    "id": "ff89d780a81bcfbd",
     "type": "split",
     "children": [
       {
-        "id": "b088caa47bd2d16c",
+        "id": "67e7e9626755dcce",
         "type": "tabs",
         "children": [
           {
-            "id": "c99cf714a7228584",
+            "id": "81d25c452b6297e9",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -90,13 +90,13 @@
             }
           },
           {
-            "id": "863f6042f540b854",
+            "id": "0b11295a30e76f38",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "portainer",
-                "matchingCase": true,
+                "query": "",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -107,7 +107,7 @@
             }
           },
           {
-            "id": "d02dd06a635370f9",
+            "id": "d4c45909519b6bea",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -123,20 +123,20 @@
     "width": 300
   },
   "right": {
-    "id": "35290770768ab9c4",
+    "id": "cf551623fef9d0da",
     "type": "split",
     "children": [
       {
-        "id": "c0b8d5b080afe60a",
+        "id": "a7e3e659ed846627",
         "type": "tabs",
         "children": [
           {
-            "id": "7a4a0ef232ebb69d",
+            "id": "0ba7e1f74659c0d2",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "flutter/Navigator.md",
+                "file": "Komunikasi_Jaringan_Komputer/Tugas_2/readme.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,46 +146,45 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Navigator"
+              "title": "Backlinks for readme"
             }
           },
           {
-            "id": "4d9be03c2a5749d3",
+            "id": "e36fefdcb97bf297",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "flutter/Navigator.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Navigator"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "5f3692855ad25ce0",
+            "id": "855bfe2e007b9716",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": false
+                "useHierarchy": true
               },
               "icon": "lucide-tags",
               "title": "Tags"
             }
           },
           {
-            "id": "1832a77a609dc211",
+            "id": "393d6824a471a022",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Jenkins/3 Jenkins Shared Library.md"
+                "file": "Komunikasi_Jaringan_Komputer/Tugas_2/readme.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 3 Jenkins Shared Library"
+              "title": "Outline of readme"
             }
           }
         ],
@@ -193,8 +192,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,51 +204,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fa0f8298312cd196",
+  "active": "46442c8f7fd7a531",
   "lastOpenFiles": [
-    "Jenkins/2 Jenkins Pipeline.md",
-    "Jenkins/3 Jenkins Shared Library.md",
-    "Jenkins/1 Jenkins Documentation.md",
-    "SMTP/image/SMTP_work.png",
-    "SMTP/image",
-    "DNS/image/DNS_work.jpeg",
-    "DNS/image",
-    "HTTP/Test HTTP 1.1, 2.0, 3.0.md",
-    "DNS/Domain Name System (DNS).md",
-    "_config.yml",
-    "docker/portainer docker-compose.md",
-    "linux/instalasi https gitea/Konfigurasi https gitea dengan openSSL menggunakan d128b4b5e405455c9e81291290b785c4.md",
-    "dicoding/Menjadi Linux System Administrator/Belajar Implementasi CICD.md",
-    "docker/jenkins-docker.md",
-    "Jenkins",
-    "docker/nginx docker.md",
-    "HTTP/img/result_HTTP.png",
-    "HTTP/img/result_HTTPS.png",
-    "SampleMarkdown.md",
-    "asdf.md",
-    "dicoding/Menjadi Linux System Administrator/Menjadi Linux System Administrator - Dicoding Acamdemy AWS.md",
-    "HTTP/img/image.png",
-    "HTTP/img",
-    "docker/cheatset/Docker Composer YAML.md",
-    "linux/install HTTPS Nginx di Ubuntu.md",
-    "linux/instalation and conf nginx in ubuntu.md",
-    "linux/HTTPS nginx docker compose gitea.md",
-    "docker/docker command.md",
+    "karya-tulis-ilmiah/Bagaimana Cara Membuat Laporan Tugas Akhir (Thesis).md",
+    "karya-tulis-ilmiah",
+    "Sepuluh Cara Self Reward yang Efektif untuk Menjaga Produktivitas!.md",
+    "Artificial_Intelligence/program_application/UAS_AI_S2_Prof_Ali_Barakbah_Class_Animal/UAS_AI_S2_Prof_Ali_Barakbah_Class_Animal(program bapak).ipynb",
+    "Komunikasi_Jaringan_Komputer/Tugas_3/readme.md",
+    "Komunikasi_Jaringan_Komputer/readme.md",
+    "Komunikasi_Jaringan_Komputer/Readme.md",
+    "Artificial_Intelligence/program_application/image/deep_learning_model.png",
+    "Artificial_Intelligence/program_application/image",
+    "Artificial_Intelligence/program_application/UAS_AI_S2_Prof_Ali_Barakbah_Class_Animal/labels.txt",
+    "Artificial_Intelligence/program_application/UAS_AI_S2_Prof_Ali_Barakbah_Class_Animal/UAS_AI_S2_Prof_Ali_Barakbah_Class_Animal(program bapak ori).ipynb",
+    "Artificial_Intelligence/program_application/UAS_AI_S2_Prof_Ali_Barakbah_Class_Animal/UAS_AI_S2_Prof_Ali_Barakbah_Class_Animal(program bapak experiment).ipynb",
+    "random",
+    "Komunikasi_Jaringan_Komputer/Tugas_2/readme.md",
+    "Artificial_Intelligence/program_application/UAS_AI_S2_Prof_Ali_Barakbah_Class_Animal/UAS_AI_S2_Prof_Ali_Barakbah_Class_Animal copy.ipynb",
+    "Komunikasi_Jaringan_Komputer/Tugas_1/readme.md",
+    "Komunikasi_Jaringan_Komputer/Tugas_1/image/tcp_connection_sequence.jpg",
+    "Komunikasi_Jaringan_Komputer/Tugas_1/image/tcp connection sequnce.jpg",
+    "Komunikasi_Jaringan_Komputer/Tugas_1/image",
+    "Komunikasi_Jaringan_Komputer/UAS/readme.md",
+    "Komunikasi_Jaringan_Komputer/UAS",
+    "Tugas_3/readme.md",
     "HTTP/How to HTTP working.md",
-    "Pasted image 20241125150941.png",
-    "Pasted image 20241125150925.png",
-    "SMTP/SMTP (Simple Mail Transfer Protocol).md",
-    "HTTP",
-    "Database/MySQL/Backup database MySQL.md",
-    "SMTP",
-    "nginx/Record Type.md",
-    "DNS",
-    "'.md",
-    "Database/mongoDB/Backup MongoDB with mongodumb.md",
-    "nginx",
-    "linux/Upload local to VPS with SCP.md",
-    "Database/MySQL/Restore Database.md",
-    "network_pentest",
-    "Untitled.canvas"
+    "HTTP/img/image.png",
+    "HTTP/img/Comparison-of-HTTP-versions.jpg",
+    "HTTP/img/result_HTTP.png",
+    "HTTP/img/result_HTTPS.png"
   ]
 }
