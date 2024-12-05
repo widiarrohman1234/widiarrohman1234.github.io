@@ -1,9 +1,0 @@
-{
-  "pdfExportSettings": {
-    "includeName": true,
-    "pageSize": "A5",
-    "landscape": false,
-    "margin": "2",
-    "downscalePercent": 80
-  }
-}
